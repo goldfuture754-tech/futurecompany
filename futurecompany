@@ -1,0 +1,2087 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="المستقبل الذهبي لخدمات مكافحة الحشرات والقوارض في جميع مناطق المنطقة الشرقية. اتصل بنا أو تواصل معنا عبر واتساب.">
+
+    <meta name="theme-color" content="#071f36">
+
+    <title>المستقبل الذهبي | مكافحة الحشرات والقوارض</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+
+        /* =========================
+           GENERAL
+        ========================= */
+
+        :root {
+            --navy: #071f36;
+            --navy2: #0b3558;
+            --gold: #d8a72d;
+            --gold2: #f2ca61;
+            --white: #ffffff;
+            --light: #f5f8fb;
+            --text: #172534;
+            --muted: #657486;
+            --green: #20c66a;
+            --green-dark: #0c9f4d;
+            --shadow: 0 15px 45px rgba(7, 31, 54, .12);
+            --radius: 22px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "Cairo", sans-serif;
+            background: var(--white);
+            color: var(--text);
+            line-height: 1.8;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        button {
+            font-family: inherit;
+        }
+
+        .container {
+            width: min(1150px, calc(100% - 30px));
+            margin: auto;
+        }
+
+
+        /* =========================
+           TOP BAR
+        ========================= */
+
+        .topbar {
+            background: var(--navy);
+            color: white;
+            padding: 8px 0;
+            font-size: 13px;
+        }
+
+        .topbar-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .top-item {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+        }
+
+        .top-item i {
+            color: var(--gold2);
+        }
+
+
+        /* =========================
+           HEADER
+        ========================= */
+
+        header {
+            background: white;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 5px 25px rgba(0,0,0,.07);
+        }
+
+        .header-inner {
+            min-height: 75px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 900;
+            font-size: 20px;
+            color: var(--navy);
+        }
+
+        .logo-icon {
+            width: 45px;
+            height: 45px;
+            border-radius: 14px;
+            background: linear-gradient(135deg, var(--gold), #a97908);
+            color: white;
+            display: grid;
+            place-items: center;
+            font-size: 21px;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 23px;
+        }
+
+        nav a {
+            font-size: 14px;
+            font-weight: 700;
+            color: #394b5c;
+            transition: .2s;
+        }
+
+        nav a:hover {
+            color: var(--gold);
+        }
+
+        .header-phone {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 15px;
+            background: var(--navy);
+            color: white;
+            border-radius: 12px;
+            font-weight: 800;
+            font-size: 14px;
+        }
+
+        .header-phone i {
+            color: var(--gold2);
+        }
+
+        .menu-btn {
+            display: none;
+            border: 0;
+            background: var(--navy);
+            color: white;
+            width: 45px;
+            height: 45px;
+            border-radius: 12px;
+            cursor: pointer;
+            font-size: 19px;
+        }
+
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .hero {
+            background:
+                radial-gradient(circle at 10% 20%, rgba(216,167,45,.16), transparent 30%),
+                linear-gradient(135deg, #071f36 0%, #0b3558 100%);
+            color: white;
+            padding: 55px 0 65px;
+            overflow: hidden;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr .9fr;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 15px;
+            background: rgba(255,255,255,.1);
+            border: 1px solid rgba(255,255,255,.15);
+            border-radius: 50px;
+            font-size: 13px;
+            font-weight: 700;
+            margin-bottom: 18px;
+        }
+
+        .badge i {
+            color: var(--gold2);
+        }
+
+        .hero h1 {
+            font-size: clamp(34px, 5vw, 58px);
+            line-height: 1.25;
+            margin-bottom: 18px;
+            font-weight: 900;
+        }
+
+        .hero h1 span {
+            color: var(--gold2);
+        }
+
+        .hero-description {
+            color: rgba(255,255,255,.83);
+            font-size: 17px;
+            max-width: 620px;
+            margin-bottom: 25px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 9px;
+            padding: 14px 22px;
+            border-radius: 13px;
+            font-weight: 800;
+            border: 0;
+            cursor: pointer;
+            transition: .25s;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+        }
+
+        .btn-whatsapp {
+            background: var(--green);
+            color: white;
+            box-shadow: 0 10px 25px rgba(32,198,106,.22);
+        }
+
+        .btn-call {
+            background: white;
+            color: var(--navy);
+        }
+
+        .hero-trust {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+            color: rgba(255,255,255,.8);
+            font-size: 13px;
+        }
+
+        .hero-trust span {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+        }
+
+        .hero-trust i {
+            color: var(--gold2);
+        }
+
+        .hero-image {
+            position: relative;
+        }
+
+        .hero-image-card {
+            background: white;
+            padding: 8px;
+            border-radius: 25px;
+            box-shadow: 0 25px 60px rgba(0,0,0,.28);
+            transform: rotate(1deg);
+        }
+
+        .hero-image img {
+            width: 100%;
+            border-radius: 18px;
+            max-height: 520px;
+            object-fit: cover;
+        }
+
+
+        /* =========================
+           QUICK CTA
+        ========================= */
+
+        .quick-cta {
+            margin-top: -28px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .quick-box {
+            background: white;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+            padding: 20px 25px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .quick-title {
+            font-size: 18px;
+            font-weight: 900;
+            color: var(--navy);
+        }
+
+        .quick-sub {
+            font-size: 13px;
+            color: var(--muted);
+        }
+
+
+        /* =========================
+           SECTIONS
+        ========================= */
+
+        section {
+            padding: 80px 0;
+        }
+
+        .section-head {
+            text-align: center;
+            max-width: 720px;
+            margin: 0 auto 40px;
+        }
+
+        .section-label {
+            color: #a77a0c;
+            font-size: 13px;
+            font-weight: 900;
+            margin-bottom: 5px;
+        }
+
+        .section-title {
+            color: var(--navy);
+            font-size: clamp(28px, 4vw, 40px);
+            line-height: 1.3;
+            font-weight: 900;
+            margin-bottom: 10px;
+        }
+
+        .section-description {
+            color: var(--muted);
+            font-size: 15px;
+        }
+
+
+        /* =========================
+           SERVICES
+        ========================= */
+
+        .services {
+            background: var(--light);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .service-card {
+            background: white;
+            border: 1px solid #e8edf2;
+            border-radius: var(--radius);
+            padding: 27px 23px;
+            transition: .25s;
+            box-shadow: 0 7px 25px rgba(7,31,54,.04);
+        }
+
+        .service-card:hover {
+            transform: translateY(-7px);
+            box-shadow: var(--shadow);
+            border-color: rgba(216,167,45,.45);
+        }
+
+        .service-icon {
+            width: 58px;
+            height: 58px;
+            border-radius: 17px;
+            display: grid;
+            place-items: center;
+            background: rgba(216,167,45,.13);
+            color: #a7790a;
+            font-size: 23px;
+            margin-bottom: 17px;
+        }
+
+        .service-card h3 {
+            font-size: 18px;
+            color: var(--navy);
+            margin-bottom: 8px;
+            font-weight: 900;
+        }
+
+        .service-card p {
+            color: var(--muted);
+            font-size: 13px;
+        }
+
+
+        /* =========================
+           ADS / IMAGES
+        ========================= */
+
+        .ads-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .ad-card {
+            background: white;
+            border-radius: 22px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            border: 1px solid #e9eef3;
+        }
+
+        .ad-card img {
+            width: 100%;
+            height: 440px;
+            object-fit: cover;
+            transition: .3s;
+        }
+
+        .ad-card:hover img {
+            transform: scale(1.02);
+        }
+
+        .ad-content {
+            padding: 17px;
+            text-align: center;
+        }
+
+        .ad-content h3 {
+            color: var(--navy);
+            font-size: 17px;
+            font-weight: 900;
+        }
+
+        .ad-content p {
+            color: var(--muted);
+            font-size: 12px;
+        }
+
+
+        /* =========================
+           OFFER
+        ========================= */
+
+        .offer {
+            background: linear-gradient(135deg, #f9f1d9, #fff);
+        }
+
+        .offer-box {
+            display: grid;
+            grid-template-columns: .8fr 1fr;
+            align-items: center;
+            gap: 40px;
+            background: white;
+            padding: 18px;
+            border-radius: 27px;
+            box-shadow: var(--shadow);
+        }
+
+        .offer-image img {
+            width: 100%;
+            border-radius: 20px;
+            max-height: 500px;
+            object-fit: cover;
+        }
+
+        .offer-content {
+            padding: 25px;
+        }
+
+        .offer-content .section-label {
+            text-align: right;
+        }
+
+        .offer-content h2 {
+            font-size: 35px;
+            color: var(--navy);
+            line-height: 1.35;
+            font-weight: 900;
+            margin-bottom: 15px;
+        }
+
+        .offer-content p {
+            color: var(--muted);
+            margin-bottom: 20px;
+        }
+
+        .check-list {
+            list-style: none;
+            display: grid;
+            gap: 10px;
+            margin-bottom: 25px;
+        }
+
+        .check-list li {
+            display: flex;
+            align-items: center;
+            gap: 9px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        .check-list i {
+            color: var(--green-dark);
+        }
+
+
+        /* =========================
+           WHY US
+        ========================= */
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 45px;
+            align-items: center;
+        }
+
+        .why-list {
+            display: grid;
+            gap: 15px;
+        }
+
+        .why-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            padding: 16px;
+            border-radius: 17px;
+            background: #f8fafc;
+        }
+
+        .why-icon {
+            width: 46px;
+            height: 46px;
+            flex: 0 0 46px;
+            display: grid;
+            place-items: center;
+            background: var(--navy);
+            color: var(--gold2);
+            border-radius: 13px;
+        }
+
+        .why-item h3 {
+            font-size: 16px;
+            color: var(--navy);
+            margin-bottom: 3px;
+            font-weight: 900;
+        }
+
+        .why-item p {
+            font-size: 12px;
+            color: var(--muted);
+        }
+
+        .why-image {
+            border-radius: 25px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .why-image img {
+            width: 100%;
+            max-height: 550px;
+            object-fit: cover;
+        }
+
+
+        /* =========================
+           AREAS
+        ========================= */
+
+        .areas {
+            background: var(--light);
+        }
+
+        .areas-box {
+            background: var(--navy);
+            color: white;
+            border-radius: 28px;
+            padding: 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .areas-box::before {
+            content: "";
+            position: absolute;
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            background: rgba(216,167,45,.12);
+            top: -100px;
+            right: -80px;
+        }
+
+        .areas-box h2 {
+            font-size: 30px;
+            font-weight: 900;
+            position: relative;
+        }
+
+        .areas-box p {
+            color: rgba(255,255,255,.75);
+            font-size: 14px;
+            margin: 8px 0 25px;
+            position: relative;
+        }
+
+        .area-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            position: relative;
+        }
+
+        .area {
+            background: rgba(255,255,255,.1);
+            border: 1px solid rgba(255,255,255,.14);
+            padding: 9px 17px;
+            border-radius: 50px;
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+
+        /* =========================
+           FINAL CTA
+        ========================= */
+
+        .final-cta {
+            padding: 65px 0;
+            background: linear-gradient(135deg, #0b3558, #071f36);
+            color: white;
+            text-align: center;
+        }
+
+        .final-cta h2 {
+            font-size: clamp(29px, 5vw, 45px);
+            font-weight: 900;
+            margin-bottom: 10px;
+        }
+
+        .final-cta p {
+            color: rgba(255,255,255,.75);
+            margin-bottom: 25px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            background: #041523;
+            color: white;
+            padding: 35px 0 95px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.4fr 1fr 1fr;
+            gap: 30px;
+        }
+
+        .footer-brand {
+            font-size: 21px;
+            font-weight: 900;
+            margin-bottom: 10px;
+        }
+
+        .footer-text {
+            color: rgba(255,255,255,.65);
+            font-size: 13px;
+        }
+
+        .footer-title {
+            color: var(--gold2);
+            font-size: 15px;
+            font-weight: 900;
+            margin-bottom: 10px;
+        }
+
+        .footer-links {
+            display: grid;
+            gap: 6px;
+            font-size: 13px;
+            color: rgba(255,255,255,.7);
+        }
+
+        .footer-links a:hover {
+            color: var(--gold2);
+        }
+
+        .copyright {
+            border-top: 1px solid rgba(255,255,255,.1);
+            margin-top: 25px;
+            padding-top: 18px;
+            text-align: center;
+            color: rgba(255,255,255,.5);
+            font-size: 12px;
+        }
+
+
+        /* =========================
+           FLOATING BUTTONS
+        ========================= */
+
+        .floating {
+            position: fixed;
+            left: 18px;
+            bottom: 18px;
+            z-index: 2000;
+            display: grid;
+            gap: 10px;
+        }
+
+        .float-btn {
+            width: 54px;
+            height: 54px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            color: white;
+            font-size: 22px;
+            box-shadow: 0 8px 25px rgba(0,0,0,.2);
+            transition: .2s;
+        }
+
+        .float-btn:hover {
+            transform: scale(1.08);
+        }
+
+        .float-whatsapp {
+            background: var(--green);
+        }
+
+        .float-call {
+            background: var(--navy);
+        }
+
+
+        /* =========================
+           MOBILE BOTTOM BAR
+        ========================= */
+
+        .mobile-actions {
+            display: none;
+        }
+
+
+        /* =========================
+           BACK TO TOP
+        ========================= */
+
+        .back-top {
+            position: fixed;
+            right: 18px;
+            bottom: 18px;
+            width: 45px;
+            height: 45px;
+            border: 0;
+            border-radius: 13px;
+            background: var(--gold);
+            color: white;
+            cursor: pointer;
+            display: none;
+            place-items: center;
+            z-index: 1900;
+        }
+
+        .back-top.show {
+            display: grid;
+        }
+
+
+        /* =========================
+           RESPONSIVE
+        ========================= */
+
+        @media (max-width: 900px) {
+
+            nav {
+                position: absolute;
+                top: 75px;
+                right: 15px;
+                left: 15px;
+                background: white;
+                border-radius: 17px;
+                box-shadow: var(--shadow);
+                padding: 15px;
+                display: none;
+                flex-direction: column;
+                align-items: stretch;
+                gap: 0;
+            }
+
+            nav.active {
+                display: flex;
+            }
+
+            nav a {
+                padding: 12px;
+                border-bottom: 1px solid #edf0f3;
+            }
+
+            nav a:last-child {
+                border-bottom: 0;
+            }
+
+            .menu-btn {
+                display: block;
+            }
+
+            .header-phone {
+                display: none;
+            }
+
+            .hero-grid {
+                grid-template-columns: 1fr;
+                gap: 35px;
+            }
+
+            .hero-content {
+                text-align: center;
+            }
+
+            .hero-description {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .hero-buttons,
+            .hero-trust {
+                justify-content: center;
+            }
+
+            .services-grid,
+            .ads-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .offer-box {
+                grid-template-columns: 1fr;
+            }
+
+            .why-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+
+        @media (max-width: 600px) {
+
+            .topbar-inner {
+                justify-content: center;
+            }
+
+            .top-item:first-child {
+                display: none;
+            }
+
+            .container {
+                width: min(100% - 22px, 1150px);
+            }
+
+            .header-inner {
+                min-height: 68px;
+            }
+
+            .logo {
+                font-size: 16px;
+            }
+
+            .logo-icon {
+                width: 40px;
+                height: 40px;
+            }
+
+            nav {
+                top: 68px;
+            }
+
+            .hero {
+                padding: 38px 0 50px;
+            }
+
+            .hero h1 {
+                font-size: 34px;
+            }
+
+            .hero-description {
+                font-size: 14px;
+            }
+
+            .btn {
+                width: 100%;
+            }
+
+            .hero-buttons {
+                width: 100%;
+            }
+
+            .hero-trust {
+                font-size: 11px;
+                gap: 10px;
+            }
+
+            .quick-box {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            section {
+                padding: 60px 0;
+            }
+
+            .services-grid,
+            .ads-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .service-card {
+                padding: 22px;
+            }
+
+            .ad-card img {
+                height: auto;
+                max-height: none;
+            }
+
+            .offer-content {
+                padding: 15px;
+            }
+
+            .offer-content h2 {
+                font-size: 28px;
+            }
+
+            .areas-box {
+                padding: 30px 17px;
+            }
+
+            .areas-box h2 {
+                font-size: 25px;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .floating {
+                display: none;
+            }
+
+            .mobile-actions {
+                position: fixed;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                z-index: 3000;
+                background: white;
+                box-shadow: 0 -5px 25px rgba(0,0,0,.15);
+            }
+
+            .mobile-action {
+                padding: 13px 8px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 7px;
+                font-weight: 900;
+                font-size: 13px;
+            }
+
+            .mobile-action.whatsapp {
+                background: var(--green);
+                color: white;
+            }
+
+            .mobile-action.call {
+                background: var(--navy);
+                color: white;
+            }
+
+            footer {
+                padding-bottom: 80px;
+            }
+
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+    <!-- TOP BAR -->
+
+    <div class="topbar">
+
+        <div class="container topbar-inner">
+
+            <div class="top-item">
+                <i class="fa-solid fa-location-dot"></i>
+                جميع مناطق المنطقة الشرقية
+            </div>
+
+            <a href="tel:+966549095575" class="top-item">
+                <i class="fa-solid fa-phone"></i>
+                0549095575
+            </a>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="container header-inner">
+
+            <a href="#home" class="logo">
+
+                <span class="logo-icon">
+                    <i class="fa-solid fa-bug"></i>
+                </span>
+
+                <span>
+                    المستقبل الذهبي
+                </span>
+
+            </a>
+
+
+            <button class="menu-btn" id="menuBtn" aria-label="فتح القائمة">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+
+            <nav id="mainNav">
+
+                <a href="#home">الرئيسية</a>
+
+                <a href="#services">خدماتنا</a>
+
+                <a href="#ads">إعلاناتنا</a>
+
+                <a href="#why">لماذا نحن؟</a>
+
+                <a href="#areas">مناطق الخدمة</a>
+
+                <a href="#contact">تواصل معنا</a>
+
+            </nav>
+
+
+            <a href="tel:+966549095575" class="header-phone">
+
+                <i class="fa-solid fa-phone"></i>
+
+                0549095575
+
+            </a>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- HERO -->
+
+    <main id="home">
+
+        <section class="hero">
+
+            <div class="container hero-grid">
+
+
+                <div class="hero-content">
+
+                    <div class="badge">
+
+                        <i class="fa-solid fa-shield-halved"></i>
+
+                        مكافحة احترافية للحشرات والقوارض
+
+                    </div>
+
+
+                    <h1>
+
+                        عندك حشرات؟
+
+                        <br>
+
+                        <span>خلّص منها الآن</span>
+
+                    </h1>
+
+
+                    <p class="hero-description">
+
+                        المستقبل الذهبي لخدمات مكافحة الحشرات والقوارض
+                        في جميع مناطق المنطقة الشرقية.
+                        تواصل معنا الآن واحصل على الخدمة المناسبة لمكانك.
+
+                    </p>
+
+
+                    <div class="hero-buttons">
+
+                        <a
+                            class="btn btn-whatsapp"
+                            href="https://wa.me/966549095575?text=السلام%20عليكم،%20أرغب%20في%20طلب%20خدمة%20مكافحة%20الحشرات"
+                            target="_blank"
+                            rel="noopener">
+
+                            <i class="fa-brands fa-whatsapp"></i>
+
+                            تواصل واتساب
+
+                        </a>
+
+
+                        <a
+                            class="btn btn-call"
+                            href="tel:+966549095575">
+
+                            <i class="fa-solid fa-phone"></i>
+
+                            اتصل الآن
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="hero-trust">
+
+                        <span>
+                            <i class="fa-solid fa-circle-check"></i>
+                            خدمة للمنازل والمنشآت
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-location-dot"></i>
+                            المنطقة الشرقية
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-headset"></i>
+                            تواصل مباشر
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="hero-image">
+
+                    <div class="hero-image-card">
+
+                        <img
+                            src="assets/hero-ad.png"
+                            alt="المستقبل الذهبي لخدمات مكافحة الحشرات"
+                            loading="eager">
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- QUICK CTA -->
+
+        <div class="quick-cta">
+
+            <div class="container">
+
+                <div class="quick-box">
+
+                    <div>
+
+                        <div class="quick-title">
+                            مشكلة حشرات أو قوارض؟
+                        </div>
+
+                        <div class="quick-sub">
+                            أرسل لنا عبر واتساب تفاصيل الخدمة المطلوبة.
+                        </div>
+
+                    </div>
+
+
+                    <a
+                        href="https://wa.me/966549095575?text=السلام%20عليكم،%20أرغب%20في%20الاستفسار%20عن%20خدمات%20مكافحة%20الحشرات"
+                        target="_blank"
+                        rel="noopener"
+                        class="btn btn-whatsapp">
+
+                        <i class="fa-brands fa-whatsapp"></i>
+
+                        احجز عبر واتساب
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- SERVICES -->
+
+        <section class="services" id="services">
+
+            <div class="container">
+
+                <div class="section-head">
+
+                    <div class="section-label">
+                        خدماتنا
+                    </div>
+
+                    <h2 class="section-title">
+                        حلول لمختلف مشاكل الحشرات والقوارض
+                    </h2>
+
+                    <p class="section-description">
+                        نقدم خدمات مكافحة متنوعة للمنازل والفلل والمنشآت
+                        حسب نوع المشكلة ومكان الإصابة.
+                    </p>
+
+                </div>
+
+
+                <div class="services-grid">
+
+
+                    <div class="service-card">
+
+                        <div class="service-icon">
+                            <i class="fa-solid fa-bug"></i>
+                        </div>
+
+                        <h3>
+                            مكافحة الحشرات
+                        </h3>
+
+                        <p>
+                            مكافحة الحشرات داخل وخارج المنازل والمنشآت
+                            والتعامل مع مصادر المشكلة.
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="service-card">
+
+                        <div class="service-icon">
+                            <i class="fa-solid fa-spider"></i>
+                        </div>
+
+                        <h3>
+                            مكافحة الصراصير
+                        </h3>
+
+                        <p>
+                            حلول لمشكلة الصراصير ومتابعة أماكن ظهورها
+                            داخل المكان.
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="service-card">
+
+                        <div class="service-icon">
+                            <i class="fa-solid fa-house"></i>
+                        </div>
+
+                        <h3>
+                            مكافحة النمل الأبيض
+                        </h3>
+
+                        <p>
+                            خدمات مكافحة النمل الأبيض للمنازل والفلل
+                            والمنشآت.
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="service-card">
+
+                        <div class="service-icon">
+                            <i class="fa-solid fa-paw"></i>
+                        </div>
+
+                        <h3>
+                            مكافحة القوارض
+                        </h3>
+
+                        <p>
+                            مكافحة القوارض والتعامل مع أماكن وجودها
+                            ومصادر دخولها.
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="service-card">
+
+                        <div class="service-icon">
+                            <i class="fa-solid fa-mosquito"></i>
+                        </div>
+
+                        <h3>
+                            مكافحة البعوض
+                        </h3>
+
+                        <p>
+                            خدمات مكافحة البعوض في الأماكن السكنية
+                            والمناطق المحيطة بها.
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="service-card">
+
+                        <div class="service-icon">
+                            <i class="fa-solid fa-building"></i>
+                        </div>
+
+                        <h3>
+                            الفلل والمنشآت
+                        </h3>
+
+                        <p>
+                            خدمات مخصصة للفلل والمنازل والمكاتب
+                            والمنشآت المختلفة.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ADS -->
+
+        <section id="ads">
+
+            <div class="container">
+
+                <div class="section-head">
+
+                    <div class="section-label">
+                        إعلانات وخدمات المستقبل الذهبي
+                    </div>
+
+                    <h2 class="section-title">
+                        شاهد خدماتنا
+                    </h2>
+
+                    <p class="section-description">
+                        اختر الخدمة المناسبة وتواصل معنا مباشرة عبر واتساب.
+                    </p>
+
+                </div>
+
+
+                <div class="ads-grid">
+
+
+                    <div class="ad-card">
+
+                        <img
+                            src="assets/hero-ad.png"
+                            alt="إعلان المستقبل الذهبي"
+                            loading="lazy">
+
+                        <div class="ad-content">
+
+                            <h3>
+                                مكافحة الحشرات
+                            </h3>
+
+                            <p>
+                                اطلب الخدمة الآن
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="ad-card">
+
+                        <img
+                            src="assets/services-ad.png"
+                            alt="خدمات مكافحة الحشرات"
+                            loading="lazy">
+
+                        <div class="ad-content">
+
+                            <h3>
+                                خدمات متنوعة
+                            </h3>
+
+                            <p>
+                                حلول للحشرات والقوارض
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="ad-card">
+
+                        <img
+                            src="assets/business-ad.png"
+                            alt="المستقبل الذهبي للمنشآت"
+                            loading="lazy">
+
+                        <div class="ad-content">
+
+                            <h3>
+                                للفلل والمنشآت
+                            </h3>
+
+                            <p>
+                                تواصل معنا لمعرفة الخدمة المناسبة
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- OFFER -->
+
+        <section class="offer">
+
+            <div class="container">
+
+                <div class="offer-box">
+
+
+                    <div class="offer-image">
+
+                        <img
+                            src="assets/business-ad.png"
+                            alt="خدمات المستقبل الذهبي"
+                            loading="lazy">
+
+                    </div>
+
+
+
+                    <div class="offer-content">
+
+                        <div class="section-label">
+                            اطلب خدمتك
+                        </div>
+
+                        <h2>
+                            خلّ الحشرات علينا
+                            وارتاح
+                        </h2>
+
+                        <p>
+                            تواصل معنا الآن عبر واتساب وأرسل موقعك
+                            ونوع المشكلة، وسنساعدك في معرفة الخدمة
+                            المناسبة لك.
+                        </p>
+
+
+                        <ul class="check-list">
+
+                            <li>
+                                <i class="fa-solid fa-circle-check"></i>
+                                مكافحة الحشرات
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-circle-check"></i>
+                                مكافحة القوارض
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-circle-check"></i>
+                                خدمات للفلل والمنشآت
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-circle-check"></i>
+                                تغطية مناطق المنطقة الشرقية
+                            </li>
+
+                        </ul>
+
+
+                        <a
+                            href="https://wa.me/966549095575?text=السلام%20عليكم،%20أرغب%20في%20طلب%20خدمة%20مكافحة%20الحشرات"
+                            target="_blank"
+                            rel="noopener"
+                            class="btn btn-whatsapp">
+
+                            <i class="fa-brands fa-whatsapp"></i>
+
+                            اطلب الخدمة عبر واتساب
+
+                        </a>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- WHY US -->
+
+        <section id="why">
+
+            <div class="container why-grid">
+
+
+                <div>
+
+                    <div class="section-label">
+                        لماذا المستقبل الذهبي؟
+                    </div>
+
+                    <h2 class="section-title">
+                        تواصل مباشر وخدمة مناسبة لاحتياجك
+                    </h2>
+
+                    <p class="section-description"
+                       style="margin-bottom:25px;">
+
+                        هدفنا تسهيل وصول العميل إلى الخدمة المناسبة
+                        بأسرع طريقة ممكنة.
+
+                    </p>
+
+
+                    <div class="why-list">
+
+
+                        <div class="why-item">
+
+                            <div class="why-icon">
+                                <i class="fa-solid fa-bolt"></i>
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    تواصل سريع
+                                </h3>
+
+                                <p>
+                                    تواصل معنا مباشرة عبر الاتصال أو واتساب.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="why-item">
+
+                            <div class="why-icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    تغطية المنطقة الشرقية
+                                </h3>
+
+                                <p>
+                                    نخدم مناطق متعددة في المنطقة الشرقية.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="why-item">
+
+                            <div class="why-icon">
+                                <i class="fa-solid fa-house"></i>
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    منازل وفلل ومنشآت
+                                </h3>
+
+                                <p>
+                                    خدمات مناسبة للأماكن السكنية والتجارية.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="why-image">
+
+                    <img
+                        src="assets/services-ad.png"
+                        alt="خدمات مكافحة الحشرات"
+                        loading="lazy">
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- AREAS -->
+
+        <section class="areas" id="areas">
+
+            <div class="container">
+
+                <div class="areas-box">
+
+                    <h2>
+                        نخدم جميع مناطق المنطقة الشرقية
+                    </h2>
+
+                    <p>
+                        تواصل معنا لمعرفة إمكانية تقديم الخدمة في موقعك.
+                    </p>
+
+
+                    <div class="area-list">
+
+                        <span class="area">الدمام</span>
+
+                        <span class="area">الخبر</span>
+
+                        <span class="area">الظهران</span>
+
+                        <span class="area">القطيف</span>
+
+                        <span class="area">الجبيل</span>
+
+                        <span class="area">الأحساء</span>
+
+                        <span class="area">وجميع المناطق الشرقية</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- FINAL CTA -->
+
+        <section class="final-cta" id="contact">
+
+            <div class="container">
+
+                <h2>
+                    عندك مشكلة حشرات؟
+                </h2>
+
+                <p>
+                    لا تنتظر، تواصل معنا الآن عبر واتساب أو اتصل مباشرة.
+                </p>
+
+
+                <div class="cta-buttons">
+
+
+                    <a
+                        href="https://wa.me/966549095575?text=السلام%20عليكم،%20أرغب%20في%20طلب%20خدمة%20مكافحة%20الحشرات"
+                        target="_blank"
+                        rel="noopener"
+                        class="btn btn-whatsapp">
+
+                        <i class="fa-brands fa-whatsapp"></i>
+
+                        واتساب الآن
+
+                    </a>
+
+
+                    <a
+                        href="tel:+966549095575"
+                        class="btn btn-call">
+
+                        <i class="fa-solid fa-phone"></i>
+
+                        0549095575
+
+                    </a>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="container">
+
+
+            <div class="footer-grid">
+
+
+                <div>
+
+                    <div class="footer-brand">
+                        المستقبل الذهبي
+                    </div>
+
+                    <p class="footer-text">
+                        خدمات مكافحة الحشرات والقوارض
+                        في جميع مناطق المنطقة الشرقية.
+                    </p>
+
+                </div>
+
+
+
+                <div>
+
+                    <div class="footer-title">
+                        روابط سريعة
+                    </div>
+
+                    <div class="footer-links">
+
+                        <a href="#home">الرئيسية</a>
+
+                        <a href="#services">خدماتنا</a>
+
+                        <a href="#ads">إعلاناتنا</a>
+
+                        <a href="#contact">تواصل معنا</a>
+
+                    </div>
+
+                </div>
+
+
+
+                <div>
+
+                    <div class="footer-title">
+                        تواصل معنا
+                    </div>
+
+                    <div class="footer-links">
+
+                        <a href="tel:+966549095575">
+                            0549095575
+                        </a>
+
+                        <a
+                            href="https://wa.me/966549095575"
+                            target="_blank"
+                            rel="noopener">
+
+                            واتساب
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="copyright">
+
+                © <span id="year"></span>
+                المستقبل الذهبي لخدمات مكافحة الحشرات.
+                جميع الحقوق محفوظة.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- FLOATING BUTTONS -->
+
+    <div class="floating">
+
+
+        <a
+            href="https://wa.me/966549095575?text=السلام%20عليكم،%20أرغب%20في%20طلب%20خدمة%20مكافحة%20الحشرات"
+            target="_blank"
+            rel="noopener"
+            class="float-btn float-whatsapp"
+            aria-label="واتساب">
+
+            <i class="fa-brands fa-whatsapp"></i>
+
+        </a>
+
+
+        <a
+            href="tel:+966549095575"
+            class="float-btn float-call"
+            aria-label="اتصال">
+
+            <i class="fa-solid fa-phone"></i>
+
+        </a>
+
+
+    </div>
+
+
+
+    <!-- MOBILE BOTTOM ACTIONS -->
+
+    <div class="mobile-actions">
+
+
+        <a
+            href="tel:+966549095575"
+            class="mobile-action call">
+
+            <i class="fa-solid fa-phone"></i>
+
+            اتصال الآن
+
+        </a>
+
+
+        <a
+            href="https://wa.me/966549095575?text=السلام%20عليكم،%20أرغب%20في%20طلب%20خدمة%20مكافحة%20الحشرات"
+            target="_blank"
+            rel="noopener"
+            class="mobile-action whatsapp">
+
+            <i class="fa-brands fa-whatsapp"></i>
+
+            واتساب
+
+        </a>
+
+
+    </div>
+
+
+
+    <!-- BACK TO TOP -->
+
+    <button
+        class="back-top"
+        id="backTop"
+        aria-label="العودة للأعلى">
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+
+        /* القائمة في الجوال */
+
+        const menuBtn = document.getElementById("menuBtn");
+        const mainNav = document.getElementById("mainNav");
+
+        menuBtn.addEventListener("click", function () {
+
+            mainNav.classList.toggle("active");
+
+        });
+
+
+        /* إغلاق القائمة بعد الضغط على الرابط */
+
+        document.querySelectorAll("#mainNav a").forEach(function(link) {
+
+            link.addEventListener("click", function() {
+
+                mainNav.classList.remove("active");
+
+            });
+
+        });
+
+
+        /* السنة الحالية */
+
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+
+
+        /* زر العودة للأعلى */
+
+        const backTop = document.getElementById("backTop");
+
+        window.addEventListener("scroll", function() {
+
+            if (window.scrollY > 500) {
+
+                backTop.classList.add("show");
+
+            } else {
+
+                backTop.classList.remove("show");
+
+            }
+
+        });
+
+
+        backTop.addEventListener("click", function() {
+
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+
+        });
+
+    </script>
+
+
+</body>
+
+</html>
